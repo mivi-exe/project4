@@ -45,6 +45,7 @@ header {
     background-image: url(assets/background.jpg);
     background-position: top center;
     min-height: 20vh;
+    width: 100vw;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
