@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Project 4 | Misha Williams</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <header>
+            <h1>The International Space Station</h1>
+
+            <section id="button_coord">
+                <button id="locate">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"></path><path id="rocket" fill="white" d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path>
+                        <linearGradient id="rocket-gradient" x2="0.2" y2="1">
+                            <stop offset="0%" stop-color="var(--color-stop-1)" />
+                            <stop offset="50%" stop-color="var(--color-stop-2)" />
+                            <stop offset="100%" stop-color="var(--color-stop-3)" />
+                        </linearGradient>
+                    </svg>
+                    <span>Locate</span>
+                  </button>
+                <section id="coord_info">
+                    <section id="long_info">
+                        <h3>Longitude:</h3>
+                        <p id="long">21.53</p>
+                        <p class="degree">°</p>
+                    </section>
+
+                    <section id="lat_info">
+                        <h3>Latitude:</h3>
+                        <p id="lat">-48.39</p>
+                        <p class="degree">°</p>
+                    </section>
+
+                    <section id="speed_info">
+                        <h3>Current Speed:</h3>
+                        <p id="speed">28,593</p>
+                        <p class="degree">km/h</p>
+    
+                    </section>
+                </section>
+            </section>
+        </header>
+
+        <main>
+            <section id="info">
+                <section id="chunk_1">
+                    <section id="description">
+                        <h2>About the ISS</h2>
+                        
+                        <p>The International Space Station (ISS) is the largest modular space station in low Earth orbit. The project involves five space agencies: the United States' NASA, Russia's Roscosmos, Japan's JAXA, Europe's ESA, and Canada's CSA. The ownership and use of the space station is established by intergovernmental treaties and agreements. The station serves as a microgravity and space environment research laboratory in which scientific research is conducted in astrobiology, astronomy, meteorology, physics, and other fields. The ISS is suited for testing the spacecraft systems and equipment required for possible future long-duration missions to the Moon and Mars.</p>
+
+                        <p>The ISS program evolved from the Space Station Freedom, a 1984 American proposal conceived by Ronald Reagan to construct a permanently crewed Earth-orbiting station and the contemporaneous Soviet/Russian Mir-2 proposal from 1976 with similar aims. The ISS is the ninth space station to be inhabited by crews, following the Soviet and later Russian Salyut, Almaz, and Mir stations and the American Skylab. It is the largest artificial object in the Solar System and the largest satellite in low Earth orbit, regularly visible to the naked eye from Earth's surface. It maintains an orbit with an average altitude of 400 kilometers (250 mi). The ISS circles the Earth in roughly 93 minutes, completing 15.5 orbits per day.</p>
+
+                        <section class="info_link">
+                            <a href="https://www.nasa.gov/international-space-station/">
+                                <p>For more information on the ISS</p>
+                                <span class="material-symbols-outlined">trending_flat</span>
+                            </a>
+                        </section>
+                    </section>
+
+                    <section id="on_board">
+                        <h2>Crew On Board</h2>
+
+                        <p>The current crew on board are apart of Expedition 70. The Expedition 70 crew began on Sept. 27, 2023 and have members from the USA, Russia, Japan, and Denmark. The astronauts and cosmonauts will be studying an array of microgravity phenomena to benefit humans living on and off the Earth. The orbital residents will also explore heart health, cancer treatments, space manufacturing techniques, and more during their long-duration stay in Earth orbit. They have completed 2 spacewalks, averaging at 7 hours and 15 minutes in length. The crew are set to return to Earth in the Spring of 2024. Meet Expedition 70's crew:</p>
+
+                        <section id="astronauts">
+                            <section id="list">
+                                <p id="list_top"><a href="https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Astronauts/Andreas_Mogensen">Andreas Mogensen</a>&ensp;-&ensp;Commander</p>
+
+                                <p><a href="https://www.nasa.gov/wp-content/uploads/2023/07/moghbeli-j.pdf">Jasmin Moghbeli</a>&ensp;-&ensp;Flight Engineer</p>
+
+                                <p><a href="https://humans-in-space.jaxa.jp/en/astronaut/furukawa-satoshi/">Satoshi Furukawa</a>&ensp;-&ensp;Flight Engineer</p>
+
+                                <p><a href="https://www.nasa.gov/wp-content/uploads/2020/06/ohara-l.pdf">Loral O'Hara</a>&ensp;-&ensp;Flight Engineer</p>
+
+                                <p><a href="https://en.wikipedia.org/wiki/Konstantin_Borisov">Konstantin Borisov</a>&ensp;-&ensp;Flight Engineer</p>
+
+                                <p><a href="https://en.wikipedia.org/wiki/Oleg_Kononenko">Oleg Kononenko</a>&ensp;-&ensp;Flight Engineer</p>
+
+                                <p id="list_bottom"><a href="https://en.wikipedia.org/wiki/Nikolai_Chub">Nikolai Chub</a>&ensp;-&ensp;Flight Engineer</p>
+                            </section>
+
+                            <img src="assets/crew.png" alt="Crew floating and smiling on ISS">
+                        </section>
+
+                        <section class="info_link" id="link_crew">
+                            <a href="https://www.nasa.gov/mission/expedition-70/#crew">
+                                <p>For more information on Expedition 70</p>
+                                <span class="material-symbols-outlined">trending_flat</span>
+                            </a>
+                        </section>
+                    </section>
+                </section>
+
+                <section id="chunk_2">
+                    <section id="map">
+                        <section id="map_header">
+                            <h2>Coordinate Location</h2>
+                            <div class="box">
+                                <button class="button">Update Map</button>
+                                <div class="space">
+                                  <span style="--i: 31" class="star"></span>
+                                  <span style="--i: 12" class="star"></span>
+                                  <span style="--i: 57" class="star"></span>
+                                  <span style="--i: 93" class="star"></span>
+                                  <span style="--i: 23" class="star"></span>
+                                  <span style="--i: 70" class="star"></span>
+                                  <span style="--i: 6" class="star"></span>
+                                </div>
+                              </div>
+                        </section>
+                        <img src="assets/map_placeholder.png">
+                    </section>
+
+                    <section id="stream">
+                        <h2>ISS Live Camera</h2>
+                          
+                        <iframe width="500" height="300" src="https://www.youtube.com/embed/P9C25Un7xaM" title="Live High-Definition Views from the International Space Station (Official NASA Stream)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </section>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <p>This is a fun informational website for college, don't take this seriously</p>
+        </footer>
+
+        <script src="index.js" async defer></script>
+    </body>
+</html>

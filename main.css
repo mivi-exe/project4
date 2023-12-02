@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans&display=swap');
+
+* {
+    color: #1c1c29;
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    background-color: #eeeeff;
+    background-image: url(assets/bg-light.jpg);
+    background-position: right bottom;
+    background-repeat: none;
+    background-size: cover;
+    width: 100%;
+}
+
+h2 {
+    align-self: flex-start;
+    font-size: 28px;
+    margin-left: 15px;
+    margin-top: 12px;
+    font-family: 'Cairo', sans-serif;
+    color: rgb(37, 52, 92);
+}
+
+p {
+    font-size: 17px;
+    line-height: 140%;
+}
+
+
+/**Header**/
+h1 {
+    color: white;
+    font-size: 55px;
+    max-width: 90%;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-family: 'Cairo', sans-serif;
+}
+
+header {
+    background-image: url(assets/background.jpg);
+    background-position: top center;
+    min-height: 20vh;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/**Locate Button CSS**/
+#locate {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #29255c, #3d377e, #29255c);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    height: fit-content;
+    height: 50px;
+    align-self: flex-start;
+    margin-left: 15px;
+}
+  
+#locate svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s;
+}
+  
+#locate span {
+    transition: transform 0.7s cubic-bezier(0.76, 0, 0.24, 1);
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    font-size: 24px;
+}
+  
+#locate:hover svg {
+    transform: translateX(5px) rotate(90deg);
+
+}  
+
+#locate:hover span {
+    transform: translateX(7px);
+    color:#d8efff;
+    transition: all 0.7s;
+}
+
+#rocket-gradient {
+    --color-stop-1: #7460e2;
+    --color-stop-2: #de8bf3;
+    --color-stop-3: #ffae8b;
+}
+
+#rocket {
+    fill: url(#rocket-gradient) white;
+    transition: fill 0.4s ease;
+}
+
+
+/**Coordinate**/
+#button_coord {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#coord_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+#long_info, #lat_info, #speed_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+
+}
+
+#speed-info {
+    margin-top: -10px;
+}
+
+#long, #lat, #speed {
+    margin-left: 6px;
+    color: white;
+    font-size: 20px;
+}
+
+h3 {
+    color: white;
+    font-size: 20px;
+    margin-right: 5px;
+    font-family: 'Cairo', sans-serif;
+    text-shadow: 1px 1px 8px #120e1e;
+}
+
+.degree {
+    margin-left: 3px;
+    color: white;
+    font-size: 19px;
+    text-align: bottom;
+}
+
+
+/**Main**/
+#info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+}
+
+#chunk_1, #chunk_2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+    margin-bottom: 30px;
+}
+
+#chunk_1 p {
+    padding: 15px;
+    padding-top: 5px;
+}
+
+#description, #on_board, #map, #stream {
+    width: 94%;
+    background-color: rgba(2, 2, 2, 0.0);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info_link {
+    padding: 8px;
+    padding-top: 0px;
+    margin-right: 20px;
+    align-self: flex-end;
+    font-size: 16px;
+}
+
+.info_link a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.info_link p {
+    color: #464646;
+    margin: 0px
+}
+
+.material-symbols-outlined {
+    align-self: center;
+    padding-bottom: 7px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+    color: #5c5c5c;
+}
+
+.info_link:hover {
+    .material-symbols-outlined {
+        transition: all 0.3s;
+        color: rgb(182, 0, 0);
+    }
+}
+
+.info_link:hover p {
+    transition: all 0.3s;
+    color: rgb(19, 19, 19);
+}
+
+/**On Board Section**/
+#on_board {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#astronauts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 2px;
+}
+
+#list p {
+    padding-bottom: 5px;
+    padding-top: 0px;
+}
+
+#list a {
+    text-decoration: none;
+    color:rgb(53, 72, 122);
+}
+
+#list a:hover {
+    color: rgb(182, 0, 0);
+    transition: all 0.4s;
+}
+
+#astronauts img {
+    width: 50%;
+    height auto;
+    margin-right: 15px;
+}
+
+
+#chunk_2 {
+    width: 96%;
+}
+
+#map_header {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#map_header h2 {
+    margin-right: 20px;
+    margin-left: 0px;
+}
+
+/**Refresh Button CSS**/
+.box {
+    align-self: center;
+    margin-top: 16px;
+  --clr-text: #3b3b3b;
+  --clr-space: #2d1f52;
+  --clr-space-gr: #564781;
+  --clr-star: #E9F8F9;
+  --size: 2rem;
+  height: 30px;
+  position: relative;
+}
+
+.box:hover {
+    --clr-text: white;
+    transition: all 0.4s;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  background: transparent;
+  padding-top: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  cursor: pointer;
+  color: var(--clr-text);
+  text-shadow: 2px 0px var(--clr-shadow__border), 0px 2px var(--clr-shadow__border),
+  -2px 0px var(--clr-shadow__border), 0px -2px var(--clr-shadow__border);
+}
+
+.space {
+  width: 100%;
+  height: 100%;
+  bottom: 0%;
+  gap: 1.5rem;
+  transition: 0.5s ease-in-out;
+  z-index: -1;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  border-radius: 12px;
+  background: linear-gradient( 160deg, var(--clr-space), var(--clr-space-gr));
+}
+
+.box:hover .space {
+  opacity: 1;
+}
+
+.star {
+  height: 4rem;
+  width: 0.3rem;
+  transition: 0.5s;
+  border-radius: 50px;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  position: relative;
+  background-color: var(--clr-star);
+  animation: space-animation calc(0.1s * var(--i)) linear infinite;
+}
+
+@keyframes space-animation {
+  0% {
+    transform: rotate(-30deg) translateY(calc(-52% * var(--i)));
+  }
+
+  100% {
+    transform: rotate(-30deg) translateY(calc(52% * var(--i)));
+  }
+}
+
+#map img {
+    align-self: center;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#stream {
+    margin-top: 50px;
+}
+
+#stream h2 {
+    margin-left: 0;
+}
+
+iframe {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #585858;
+}
+
+
+@media (min-width: 680px) {
+    h1 {
+        line-height: 120%;
+        text-align: center;
+        align-self: center;
+        max-width: 80%;
+        margin-bottom: -10px;
+        font-size: 65px;
+    }
+
+    #locate {
+        align-self: center;
+    }
+
+    #coord_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 680px) {
+    #astronauts {
+        flex-direction: column-reverse;
+    }
+
+    #astronauts img {
+        align-self: center;
+        width: 80%;
+        height: auto;
+    }
+
+    #list {
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-left: 2%;
+    }
+
+    #list p {
+        padding-bottom: 20px;
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    #list p {
+        width: 300px;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 490px) {
+    #map_header {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .box {
+        margin-top: 0px;
+        align-self: flex-start;
+    }
+}
+
+@media (min-width: 1200px) {
+    #list {
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 1300px) {
+    #list {
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    #astronauts img {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1500px) {
+    #chunk_1 {
+        margin-top: -20px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    #description {
+        margin-right: 0.5%;
+        align-self: flex-start;
+    }
+
+    #on_board {
+        margin-top: 0px;
+        margin-left: 0.5%;
+        align-self: flex-start;
+    }
+
+    #chunk_2 {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    #map {
+        margin-right: 1.5%;
+        align-self: flex-start;
+    }
+    
+    #stream{
+        margin-top: 0px;
+        margin-left: 1.5%;
+        align-self: flex-start;
+    }
+
+}
