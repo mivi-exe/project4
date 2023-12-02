@@ -7,13 +7,17 @@
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
+html {
+    width: 100vw;
+}
+
 body {
     background-color: #eeeeff;
     background-image: url(assets/bg-light.jpg);
     background-position: right bottom;
     background-repeat: none;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     }
 
 h2 {
