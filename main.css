@@ -188,7 +188,7 @@ h3 {
     padding-top: 5px;
 }
 
-#description, #on_board, #map, #stream {
+#description, #on_board, #map_section, #stream {
     width: 94%;
     background-color: rgba(2, 2, 2, 0.0);
     display: flex;
@@ -377,7 +377,12 @@ h3 {
   }
 }
 
-#map img {
+
+#google_map {
+    height: 100%;
+}
+
+#map_section img {
     align-self: center;
     max-width: 100%;
     height: auto;
@@ -535,7 +540,7 @@ footer p {
         margin-right: 1%;
     }
 
-    #map {
+    #map_section {
         margin-right: 1.5%;
         align-self: flex-start;
     }
