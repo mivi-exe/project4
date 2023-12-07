@@ -378,8 +378,10 @@ h3 {
 }
 
 
-#google_map {
-    height: 100%;
+#map {
+    margin-top: 20px;
+    height: 20rem;
+    width: 100%;
 }
 
 #map_section img {

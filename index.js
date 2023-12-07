@@ -1,13 +1,3 @@
-//AIzaSyBt-nluPQzbxMIRG2iWD1c1dL4Z6nvRXqo
-
-let google_map;
-function initMap() {zv
-    console.log("Maps JavaScript API loaded.");
-    google_map = new google.maps.Map(document.getElementById("google_map"))
-  }
-  
-  window.initMap = initMap;
-
 
   //Coordinate / Speed Change
   let long = document.getElementById("long");
@@ -50,3 +40,25 @@ function initMap() {zv
     console.log(`Latitude has been changed to: ${lat.innerHTML}`);
     console.log(`Speed has been changed to: ${speed.innerHTML}`);
   }
+
+var map_long = -2.035;
+var map_lat = 40.57;
+
+var map = L.map('map').setView([map_long, map_lat], 6);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+var marker = L.marker([map_long, map_lat]).addTo(map);
+
+
+async function updateMap() {
+  var new_lat = await getLat();
+  var new_long = await getLong();
+  console.log("Map coordinates");
+  console.log(new_long);
+  console.log(new_lat);
+  map.flyTo([new_lat, new_long], 6)
+}
