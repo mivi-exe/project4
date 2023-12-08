@@ -379,17 +379,10 @@ h3 {
 
 
 #map {
-    margin-top: 20px;
-    height: 20rem;
-    width: 100%;
-}
-
-#map_section img {
-    align-self: center;
-    max-width: 100%;
+    aspect-ratio: 16 / 9;
     height: auto;
+    width: 100%;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 #stream {
@@ -421,7 +414,7 @@ footer p {
 }
 
 
-@media (min-width: 680px) {
+@media (min-width: 700px) {
     h1 {
         line-height: 120%;
         text-align: center;
