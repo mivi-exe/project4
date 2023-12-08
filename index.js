@@ -43,17 +43,26 @@
     updateMap();
   }
 
+
 var map_long = -80.651070;
 var map_lat = 28.573469;
 
 var map = L.map('map').setView([map_lat, map_long], 6);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+    maxZoom: 25,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-var marker = L.marker([map_lat, map_long]).addTo(map);
+var satIcon = L.icon({
+  iconUrl: 'assets/satellite.png',
+  iconSize:     [24, 24], // size of the icon 
+  iconAnchor:   [15, 23], // point of the icon which will correspond to marker's location
+  popupAnchor:  [-2, -18] // point from which the popup should open relative to the iconAnchor
+});
+
+var marker = L.marker([map_lat, map_long], {icon: satIcon}).addTo(map);
+
 
 
 async function updateMap() {

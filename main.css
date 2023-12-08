@@ -30,6 +30,26 @@ p {
     line-height: 140%;
 }
 
+.line {
+    width: 90vw;
+    height: 1px;
+}
+
+#line1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#line2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#line3 {
+    margin-top: 45px;
+}
+
+
 
 /**Header**/
 h1 {
@@ -296,11 +316,12 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin-left: 15px;
 }
 
 #map_header h2 {
     margin-right: 20px;
-    margin-left: 0px;
+    margin-left: 2px;
     text-overflow: none;
 }
 
@@ -381,8 +402,9 @@ h3 {
 #map {
     aspect-ratio: 16 / 9;
     height: auto;
-    width: 100%;
+    width: 96%;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 #stream {
@@ -392,6 +414,7 @@ h3 {
 #stream h2 {
     margin-left: 0;
 }
+
 
 iframe {
     aspect-ratio: 16 / 9;
@@ -411,33 +434,14 @@ footer {
 
 footer p {
     color: #585858;
+    padding-bottom: 20px;
 }
 
 
-@media (min-width: 700px) {
-    h1 {
-        line-height: 120%;
-        text-align: center;
-        align-self: center;
-        max-width: 80%;
-        margin-bottom: -10px;
-        font-size: 65px;
-    }
 
-    #locate {
-        align-self: center;
-    }
-
-    #coord_info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-left: 0px;
-    }
-}
 
 @media (max-width: 680px) {
-    * {
+    html {
         overflow-x: hidden;
     }
     #astronauts {
@@ -463,6 +467,10 @@ footer p {
         width: 200px;
     }
 
+    #map {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 }
 
 @media (max-width: 550px) {
@@ -481,6 +489,29 @@ footer p {
     .box {
         margin-top: 0px;
         align-self: flex-start;
+    }
+}
+
+
+@media (min-width: 700px) {
+    h1 {
+        line-height: 120%;
+        text-align: center;
+        align-self: center;
+        max-width: 80%;
+        margin-bottom: -10px;
+        font-size: 65px;
+    }
+
+    #locate {
+        align-self: center;
+    }
+
+    #coord_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 0px;
     }
 }
 
@@ -509,6 +540,15 @@ footer p {
 }
 
 @media (min-width: 1500px) {
+    #line1, #line3 {
+        display: none;
+    }
+
+    #line2 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
     #chunk_1 {
         margin-top: -20px;
         display: flex;
@@ -517,14 +557,13 @@ footer p {
         margin-right: 1%;
     }
 
-    #description {
-        margin-right: 0.5%;
+    #map_section {
+        margin-right: 1%;
         align-self: flex-start;
     }
 
-    #on_board {
-        margin-top: 0px;
-        margin-left: 0.5%;
+    #description {
+        margin-left: 0%;
         align-self: flex-start;
     }
 
@@ -535,14 +574,16 @@ footer p {
         margin-right: 1%;
     }
 
-    #map_section {
-        margin-right: 1.5%;
+    #on_board {
+        margin-top: 0px;
+        margin-right: 1%;
         align-self: flex-start;
     }
 
+
     #stream{
         margin-top: 0px;
-        margin-left: 1.5%;
+        margin-left: 1%;
         align-self: flex-start;
     }
 
